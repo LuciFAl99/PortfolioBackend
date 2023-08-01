@@ -13,7 +13,7 @@ public class Experiencia {
     private long id;
     private String nombreExperiencia;
     private String descripcion;
-    private String compañia;
+    private String compania;
     private String imagen;
     private LocalDate fechaInicio;
     private LocalDate fechaFin;
@@ -24,10 +24,10 @@ public class Experiencia {
     public Experiencia() {
     }
 
-    public Experiencia(String nombreExperiencia, String descripcion, String compañia, String imagen, LocalDate fechaInicio, LocalDate fechaFin, String urlPagina) {
+    public Experiencia(String nombreExperiencia, String descripcion, String compania, String imagen, LocalDate fechaInicio, LocalDate fechaFin, String urlPagina) {
         this.nombreExperiencia = nombreExperiencia;
         this.descripcion = descripcion;
-        this.compañia = compañia;
+        this.compania = compania;
         this.imagen = imagen;
         this.fechaInicio = fechaInicio;
         this.fechaFin = fechaFin;
@@ -58,12 +58,12 @@ public class Experiencia {
         this.descripcion = descripcion;
     }
 
-    public String getCompañia() {
-        return compañia;
+    public String getCompania() {
+        return compania;
     }
 
-    public void setCompañia(String compañia) {
-        this.compañia = compañia;
+    public void setCompania(String compañia) {
+        this.compania = compañia;
     }
 
     public String getImagen() {

@@ -8,7 +8,7 @@ public class ExperienciaDto {
     private long id;
     private String nombreExperiencia;
     private String descripcion;
-    private String compañia;
+    private String compania;
     private String imagen;
     private LocalDate fechaInicio;
     private LocalDate fechaFin;
@@ -18,7 +18,7 @@ public class ExperienciaDto {
         this.id = experiencia.getId();
         this.nombreExperiencia = experiencia.getNombreExperiencia();
         this.descripcion = experiencia.getDescripcion();
-        this.compañia = experiencia.getCompañia();
+        this.compania = experiencia.getCompania();
         this.imagen = experiencia.getImagen();
         this.fechaInicio = experiencia.getFechaInicio();
         this.fechaFin = experiencia.getFechaFin();
@@ -37,8 +37,8 @@ public class ExperienciaDto {
         return descripcion;
     }
 
-    public String getCompañia() {
-        return compañia;
+    public String getCompania() {
+        return compania;
     }
 
     public String getImagen() {
