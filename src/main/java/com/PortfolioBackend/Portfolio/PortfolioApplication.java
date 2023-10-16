@@ -17,7 +17,7 @@ public class PortfolioApplication {
 		SpringApplication.run(PortfolioApplication.class, args);
 	}
 
-/*	@Bean
+	/*@Bean
 	public CommandLineRunner initData(PersonaRepositorio personaRepositorio, EducacionRepositorio educacionRepositorio, ExperienciaRepositorio experienciaRepositorio, ProyectoRepositorio proyectoRepositorio, HabilidadRepositorio habilidadRepositorio) {
 		return (args) -> {
 			Persona persona1 = new Persona("Lucila", "Alochis", "lucila@gmail.com", "Fullstack Developer Java", 3516883861L, "https://res.cloudinary.com/dgxi75zjp/image/upload/v1687563017/xq6ryu7xhsey3xl4bvec.png");

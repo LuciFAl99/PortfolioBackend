@@ -1,6 +1,7 @@
 package com.PortfolioBackend.Portfolio.Servicios.Implementacion;
 
 import com.PortfolioBackend.Portfolio.Dtos.PersonaDto;
+import com.PortfolioBackend.Portfolio.Entidades.Persona;
 import com.PortfolioBackend.Portfolio.Repositorios.PersonaRepositorio;
 import com.PortfolioBackend.Portfolio.Servicios.PersonaServicio;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,4 +22,17 @@ public class PersonaServicioImplementacion implements PersonaServicio {
     public PersonaDto traerPersona(Long id) {
         return personaRepositorio.findById(id).map(persona -> new PersonaDto(persona)).orElse(null);
     }
+
+    @Override
+    public void savePersona(Persona persona) {
+        personaRepositorio.save(persona);
+    }
+
+    @Override
+    public boolean existsByEmail(String email) {
+        Persona persona = personaRepositorio.findByEmail(email);
+        return persona != null;
+    }
+
+
 }
